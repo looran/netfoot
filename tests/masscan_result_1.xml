@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- masscan v1.0 scan -->
+<nmaprun scanner="masscan" start="1597451433" version="1.0-BETA"  xmloutputversion="1.03">
+<scaninfo type="syn" protocol="tcp" />
+<host endtime="1597451433"><address addr="1.2.3.4" addrtype="ipv4"/><ports><port protocol="icmp" portid="0"><state state="open" reason="none" reason_ttl="108"/></port></ports></host>
+<runstats>
+<finished time="1597451650" timestr="2018-01-13 02:34:10" elapsed="219" />
+<hosts up="4" down="0" total="4" />
+</runstats>
+</nmaprun>

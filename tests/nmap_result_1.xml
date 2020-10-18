@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.90 scan initiated Mon Oct  5 00:16:57 2020 as: nmap -sV -sS -O -&#45;traceroute -e enp0s31f6 -T 4 -v100 &quot;-&#45;script=safe or brute&quot; -p 0-65535 -oA nmap-sV-sS-O-&#45;traceroute-e_enp0s31f6-T_4-v100-&#45;script_safe_or_brute_-p_0-65535-oA_-iL_config_targets.txt -iL config_targets.txt -->
+<nmaprun scanner="nmap" args="nmap -sV -sS -O -&#45;traceroute -e enp0s31f6 -T 4 -v100 &quot;-&#45;script=safe or brute&quot; -p 0-65535 -oA nmap-sV-sS-O-&#45;traceroute-e_enp0s31f6-T_4-v100-&#45;script_safe_or_brute_-p_0-65535-oA_-iL_config_targets.txt -iL config_targets.txt" start="1601849817" startstr="Mon Oct  5 00:16:57 2020" version="7.90" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65536" services="0-65535"/>
+<verbose level="10"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1601849817"/>
+<taskprogress task="NSE" time="1601849848" percent="94.37" remaining="2" etc="1601849850"/>
+<taskend task="NSE" time="1601849857"/>
+<taskbegin task="NSE" time="1601849857"/>
+<taskend task="NSE" time="1601849857"/>
+<taskbegin task="NSE" time="1601849857"/>
+<taskend task="NSE" time="1601849857"/>
+<taskbegin task="NSE" time="1601849857"/>
+<taskend task="NSE" time="1601849857"/>
+<prescript><script id="eap-info" output="&#xa;Available authentication methods with identity=&quot;anonymous&quot; on interface enp0s31f6&#xa;  unknown  EAP-MSCHAP-V2&#xa;  unknown  EAP-TLS&#xa;  unknown  PEAP&#xa;  unknown  EAP-TTLS&#xa;"/><script id="hostmap-robtex" output="*TEMPORARILY DISABLED* due to changes in Robtex&apos;s API. See https://www.robtex.com/api/"/><script id="http-robtex-shared-ns" output="*TEMPORARILY DISABLED* due to changes in Robtex&apos;s API. See https://www.robtex.com/api/"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/><script id="targets-sniffer" output="Sniffed 0 address(es)."/></prescript><taskbegin task="Ping Scan" time="1601849858"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="1.2.3.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1601849858" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1601849858"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1601849858"/>
+<taskbegin task="SYN Stealth Scan" time="1601849858"/>
+<taskend task="SYN Stealth Scan" time="1601849905" extrainfo="65536 total ports"/>
+<taskbegin task="Service scan" time="1601849905"/>
+<taskend task="Service scan" time="1601850062" extrainfo="5 services on 1 host"/>
+<taskbegin task="Traceroute" time="1601850074"/>
+<taskend task="Traceroute" time="1601850074"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1601850074"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1601850074"/>
+<taskbegin task="NSE" time="1601850074"/>
+<taskprogress task="NSE" time="1601850105" percent="97.40" remaining="1" etc="1601850106"/>
+<taskprogress task="NSE" time="1601850135" percent="97.55" remaining="2" etc="1601850137"/>
+<taskprogress task="NSE" time="1601850165" percent="97.91" remaining="2" etc="1601850167"/>
+<taskprogress task="NSE" time="1601850195" percent="97.82" remaining="3" etc="1601850198"/>
+<taskprogress task="NSE" time="1601850225" percent="97.64" remaining="4" etc="1601850229"/>
+<taskprogress task="NSE" time="1601850255" percent="97.85" remaining="4" etc="1601850259"/>
+<taskprogress task="NSE" time="1601850285" percent="97.74" remaining="5" etc="1601850290"/>
+<taskprogress task="NSE" time="1601850315" percent="97.82" remaining="6" etc="1601850320"/>
+<taskprogress task="NSE" time="1601850345" percent="97.91" remaining="6" etc="1601850351"/>
+<taskprogress task="NSE" time="1601850375" percent="99.20" remaining="3" etc="1601850377"/>
+<taskend task="NSE" time="1601850388"/>
+<taskbegin task="NSE" time="1601850388"/>
+<taskend task="NSE" time="1601850389"/>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<host starttime="1601849858" endtime="1601850389"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="1.2.3.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_8.4"/><script id="ssh-brute" output="Password authentication not allowed"/><script id="ssh-hostkey" output="&#xa;  2048 c0:46:0c:a0:97:36:42:51:49:17:94:9e:07:57:68:3f (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGvH3MdcbtW5ef5PjXNDYrhPbprSQDviTdXQ0T/Z4tGGXJIt3DQUmxWa1JD2isbwR7Rz5StFvg5YzdOoZAeX+meuPqcbOcQgnOFjIl+1UnSsFzMUxqNhQlU1Y+7aq0ixvjMe8wNXHlkLUChUIoLz1YXu5Iv7s2hGOl5HOe8AXORxw35xXBTFVYTnX39RudAnvHTnyjE0dYPjmpRKrSCYBOBFF2cMHBFaqPJym15rG4TrFwNuzNtM7WFO0eMyyS401dpPKyKudSM0T6pXvskM2JDdW4leTQNPUvKuCr1O0hUcj6/vfwaOGl6Ly44VIqTURBBj6oGU15o/8qPvsw1I4p&#xa;  256 0d:cd:f1:3e:29:19:83:03:3e:f1:3a:19:78:9d:35:cb (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEAsKhLEe7WHzdDlT1kxuB5tzcLtEKsKlN0hlBgC9bZVBefeIBde9O7sVHR9sI0Q2q92DWimbEs10XnSiK95G50=&#xa;  256 e5:17:90:2b:7b:36:0e:c1:df:fa:ba:66:87:52:cb:ef (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK1a72AxiRw1nCYKmmgElAxH9YSYrIqgI6tPdftC/At/"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">c0460ca0973642514917949e0757683f</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDGvH3MdcbtW5ef5PjXNDYrhPbprSQDviTdXQ0T/Z4tGGXJIt3DQUmxWa1JD2isbwR7Rz5StFvg5YzdOoZAeX+meuPqcbOcQgnOFjIl+1UnSsFzMUxqNhQlU1Y+7aq0ixvjMe8wNXHlkLUChUIoLz1YXu5Iv7s2hGOl5HOe8AXORxw35xXBTFVYTnX39RudAnvHTnyjE0dYPjmpRKrSCYBOBFF2cMHBFaqPJym15rG4TrFwNuzNtM7WFO0eMyyS401dpPKyKudSM0T6pXvskM2JDdW4leTQNPUvKuCr1O0hUcj6/vfwaOGl6Ly44VIqTURBBj6oGU15o/8qPvsw1I4p</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">0dcdf13e291983033ef13a19789d35cb</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEAsKhLEe7WHzdDlT1kxuB5tzcLtEKsKlN0hlBgC9bZVBefeIBde9O7sVHR9sI0Q2q92DWimbEs10XnSiK95G50=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">e517902b7b360ec1dffaba668752cbef</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIK1a72AxiRw1nCYKmmgElAxH9YSYrIqgI6tPdftC/At/</elem>
+</table>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (9)&#xa;      curve25519-sha256&#xa;      curve25519-sha256@libssh.org&#xa;      ecdh-sha2-nistp256&#xa;      ecdh-sha2-nistp384&#xa;      ecdh-sha2-nistp521&#xa;      diffie-hellman-group-exchange-sha256&#xa;      diffie-hellman-group16-sha512&#xa;      diffie-hellman-group18-sha512&#xa;      diffie-hellman-group14-sha256&#xa;  server_host_key_algorithms: (5)&#xa;      rsa-sha2-512&#xa;      rsa-sha2-256&#xa;      ssh-rsa&#xa;      ecdsa-sha2-nistp256&#xa;      ssh-ed25519&#xa;  encryption_algorithms: (6)&#xa;      chacha20-poly1305@openssh.com&#xa;      aes128-ctr&#xa;      aes192-ctr&#xa;      aes256-ctr&#xa;      aes128-gcm@openssh.com&#xa;      aes256-gcm@openssh.com&#xa;  mac_algorithms: (10)&#xa;      umac-64-etm@openssh.com&#xa;      umac-128-etm@openssh.com&#xa;      hmac-sha2-256-etm@openssh.com&#xa;      hmac-sha2-512-etm@openssh.com&#xa;      hmac-sha1-etm@openssh.com&#xa;      umac-64@openssh.com&#xa;      umac-128@openssh.com&#xa;      hmac-sha2-256&#xa;      hmac-sha2-512&#xa;      hmac-sha1&#xa;  compression_algorithms: (2)&#xa;      none&#xa;      zlib@openssh.com"><table key="kex_algorithms">
+<elem>curve25519-sha256</elem>
+<elem>curve25519-sha256@libssh.org</elem>
+<elem>ecdh-sha2-nistp256</elem>
+<elem>ecdh-sha2-nistp384</elem>
+<elem>ecdh-sha2-nistp521</elem>
+<elem>diffie-hellman-group-exchange-sha256</elem>
+<elem>diffie-hellman-group16-sha512</elem>
+<elem>diffie-hellman-group18-sha512</elem>
+<elem>diffie-hellman-group14-sha256</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>rsa-sha2-512</elem>
+<elem>rsa-sha2-256</elem>
+<elem>ssh-rsa</elem>
+<elem>ecdsa-sha2-nistp256</elem>
+<elem>ssh-ed25519</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>chacha20-poly1305@openssh.com</elem>
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+<elem>aes128-gcm@openssh.com</elem>
+<elem>aes256-gcm@openssh.com</elem>
+</table>
+<table key="mac_algorithms">
+<elem>umac-64-etm@openssh.com</elem>
+<elem>umac-128-etm@openssh.com</elem>
+<elem>hmac-sha2-256-etm@openssh.com</elem>
+<elem>hmac-sha2-512-etm@openssh.com</elem>
+<elem>hmac-sha1-etm@openssh.com</elem>
+<elem>umac-64@openssh.com</elem>
+<elem>umac-128@openssh.com</elem>
+<elem>hmac-sha2-256</elem>
+<elem>hmac-sha2-512</elem>
+<elem>hmac-sha1</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:8.4: &#xa;    &#x9;CVE-2008-3844&#x9;9.3&#x9;https://vulners.com/cve/CVE-2008-3844&#xa;    &#x9;CVE-2007-2768&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-2768&#xa;    &#x9;CVE-2014-9278&#x9;4.0&#x9;https://vulners.com/cve/CVE-2014-9278"><table key="cpe:/a:openbsd:openssh:8.4">
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">CVE-2008-3844</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2007-2768</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="id">CVE-2014-9278</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="banner" output="220 pyftpdlib 1.5.6 ready."/><script id="ftp-brute" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 1037 guesses in 303 seconds, average tps: 3.3"><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 1037 guesses in 303 seconds, average tps: 3.3</elem>
+</script><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2121&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2121&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script><script id="unusual-port" output="ftp unexpected on port tcp/2121"/></port>
+<port protocol="tcp" portid="2122"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="banner" output="220 pyftpdlib 1.5.6 ready."/><script id="ftp-brute" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0&#xa;  ERROR: The service seems to have failed or is heavily firewalled..."><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 0 guesses in 1 seconds, average tps: 0.0</elem>
+<elem key="ERROR">The service seems to have failed or is heavily firewalled...</elem>
+</script><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2122&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2122&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script><script id="unusual-port" output="ftp unexpected on port tcp/2122"/></port>
+<port protocol="tcp" portid="2123"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="banner" output="220 pyftpdlib 1.5.6 ready."/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x  24 s        s          110592 Sep 04 09:34 Music"/><script id="ftp-brute" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 862 guesses in 303 seconds, average tps: 2.8"><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 862 guesses in 303 seconds, average tps: 2.8</elem>
+</script><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2123&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 1.2.3.4:2123&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script><script id="unusual-port" output="ftp unexpected on port tcp/2123"/></port>
+<port protocol="tcp" portid="18793"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="33315"/>
+<osfingerprint fingerprint="OS:SCAN(V=7.90%E=4%D=10/5%OT=22%CT=1%CU=33315%PV=Y%DS=2%DC=T%G=Y%TM=5F7A4C1&#xa;OS:5%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=1%ISR=110%TI=RD%II=RI%TS=A)OPS(O1=&#xa;OS:M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7&#xa;OS:%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y&#xa;OS:%DF=N%T=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=N%T=40%S=O%A=S+%F=AS%RD&#xa;OS:=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=&#xa;OS:)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=49C7%RIPCK=G%RUC&#xa;OS:K=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1360912" lastboot="Sat Sep 19 06:24:37 2020"/>
+<distance value="2"/>
+<tcpsequence index="255" difficulty="Good luck!" values="69C19A6B,F36E5465,476357B8,88C45185,FC71C210,90D434AA"/>
+<ipidsequence class="Randomized" values="605E,8500,AA76,6F3C,FD61,115"/>
+<tcptssequence class="1000HZ" values="511909BB,51190A1F,51190A83,51190AE7,51190B4B,51190BAF"/>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="ipidseq" output="Randomized"/><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT   FAMILY  MEAN (us)  STDDEV  LOSS (%)&#xa;0      0       574.90     67.38   0.0%&#xa;22     0       534.10     47.76   0.0%&#xa;2121   0       582.10     68.69   0.0%&#xa;2122   0       587.40     64.49   0.0%&#xa;2123   0       576.50     65.70   0.0%&#xa;18793  0       548.40     87.46   0.0%&#xa;"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT   ADDRESS      GEOLOCATION&#xa;  1    0.34  2.2.2.2   - ,- &#xa;  2    0.62  1.2.3.4  - ,- &#xa;"><table>
+<elem key="rtt">0.34</elem>
+<elem key="ip">2.2.2.2</elem>
+<elem key="hop">1</elem>
+</table>
+<table>
+<elem key="rtt">0.62</elem>
+<elem key="ip">1.2.3.4</elem>
+<elem key="hop">2</elem>
+</table>
+</script></hostscript><trace port="3389" proto="tcp">
+<hop ttl="1" ipaddr="2.2.2.2" rtt="0.34"/>
+<hop ttl="2" ipaddr="1.2.3.4" rtt="0.62"/>
+</trace>
+<times srtt="565" rttvar="77" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<taskbegin task="NSE" time="1601850389"/>
+<taskend task="NSE" time="1601850389"/>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 1.2.3.4&#xa;  2121/tcp: 1.2.3.4&#xa;  2122/tcp: 1.2.3.4&#xa;  2123/tcp: 1.2.3.4&#xa;  18793/tcp: 1.2.3.4"><table key="22/tcp">
+<elem>1.2.3.4</elem>
+</table>
+<table key="2121/tcp">
+<elem>1.2.3.4</elem>
+</table>
+<table key="2122/tcp">
+<elem>1.2.3.4</elem>
+</table>
+<table key="2123/tcp">
+<elem>1.2.3.4</elem>
+</table>
+<table key="18793/tcp">
+<elem>1.2.3.4</elem>
+</table>
+</script></postscript><runstats><finished time="1601850389" timestr="Mon Oct  5 00:26:29 2020" summary="Nmap done at Mon Oct  5 00:26:29 2020; 1 IP address (1 host up) scanned in 573.39 seconds" elapsed="573.39" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
