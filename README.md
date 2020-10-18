@@ -6,6 +6,11 @@
 
 `netfoot` executes a list of commands (including `ip`,`route`,`masscan`,`traceroute`,`snmpwalk`,`nmap`) depending on the selected command groups (see `netfoot -c help` or [Netfoot executed commands list and groups](#Netfoot-executed-commands-list-and-groups) section) and stores the results in a directory structure (see `netfoot -o help` or [Netfoot command-line usage](#Netfoot-command-line-usage) section).
 
+The main advantages of netfoot are:
+* **simple command-line usage**: specify the target and it will run [multiple commands](#Netfoot-example-Target-discovery) to scan it
+* **directory tree output**: instead of just a text log file, open ports and other scan results will be placed in a host / port / result [directory tree](#Created-directory-tree)
+* **multiple perspectives** scans: you can scan from [multiple places](#Running-another-scan-from-a-different-perspective) and [multiple machines](#Netfoot-scans-from-remote-machines) and the results will be integrated in the same output directory tree
+
 Readme sections:
 * [Netfoot example: LAN discovery](#Netfoot-example-LAN-discovery)
 * [Netfoot example: Target discovery](#Netfoot-example-Target-discovery)
