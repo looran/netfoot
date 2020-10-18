@@ -11,7 +11,8 @@ The main advantages of netfoot are:
 * **directory tree output**: instead of just a text log file, open ports and other scan results will be placed in a host / port / result [directory tree](#Created-directory-tree)
 * **multiple perspectives** scans: you can scan from [multiple places](#Running-another-scan-from-a-different-perspective) and [multiple machines](#Netfoot-scans-from-remote-machines) and the results will be integrated in the same output directory tree
 
-Readme sections:
+## Readme sections:
+
 * [Netfoot example: LAN discovery](#Netfoot-example-LAN-discovery)
 * [Netfoot example: Target discovery](#Netfoot-example-Target-discovery)
   * [Initial scan](#Initial-scan)
